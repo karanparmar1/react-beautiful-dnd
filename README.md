@@ -68,6 +68,7 @@ We have created [a free course on `egghead.io` 🥚](https://egghead.io/courses/
 - Independent nested lists - a list can be a child of another list, but you cannot drag items from the parent list into a child list
 - Server side rendering (SSR) compatible - see [resetServerContext()](/docs/api/reset-server-context.md)
 - Plays well with [nested interactive elements](/docs/api/draggable.md#interactive-child-elements-within-a-draggable-) by default
+- Custom implementation to fix overlap issue [use "HIGHEST_DROPPABLE" inside one of the droppable id to prioritize it, if it is overlapping]
 
 ## Motivation 🤔
 

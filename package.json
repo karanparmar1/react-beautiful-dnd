@@ -1,7 +1,7 @@
 {
-  "name": "react-beautiful-dnd",
-  "version": "13.1.0",
-  "description": "Beautiful and accessible drag and drop for lists with React",
+  "name": "react-dnd-beautiful",
+  "version": "13.1.1",
+  "description": "Beautiful and accessible drag and drop for lists with React - custom implementation to fix overlap issue",
   "author": "Alex Reardon <areardon@atlassian.com>",
   "keywords": [
     "drag and drop",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/atlassian/react-beautiful-dnd.git"
+    "url": "https://github.com/karanparmar1/react-dnd-beautiful.git"
   },
   "bugs": {
     "url": "https://github.com/atlassian/react-beautiful-dnd/issues"

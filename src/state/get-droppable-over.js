@@ -147,6 +147,20 @@ export default function getDroppableOver({
     return candidates[0].descriptor.id;
   }
 
+  // Prioritize candidate
+  if (candidates.length) {
+    for (let i = 0; i < candidates.length; i++) {
+      // If the draggable is dragging over its own source droppable - use that
+      if (candidates[i].descriptor.id === draggable.descriptor.droppableId) {
+        return candidates[i].descriptor.id;
+      }
+      // if highest priority candidate available - use that
+      if (candidates[i].descriptor.id.indexOf('HIGHEST_DROPPABLE') >= 0) {
+        return candidates[i].descriptor.id;
+      }
+    }
+  }
+
   // Multiple options returned
   // Should only occur with really large items
   // Going to use fallback: distance from home
